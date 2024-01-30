@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;  
+}
+body{
+    background-color: #FFFFFF;
+}
+
+/* --------------------------------------NAVBAR_START-------------------------------------- */
+.navBar{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 18px;
+    box-shadow: 0 4px 3px -3px rgba(0, 0, 0, 0.2);
+    padding-bottom: 15px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.nav__contents{
+    display: flex;
+    gap: 40px;
+    
+    align-items: center;
+}
+.nav__logo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    /* letter-spacing: 7px; */
+    margin-left: -50px;
+}
+.nav__contents a{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #64748B;
+    font-size: 18px;
+    transition: .5s;
+    font-weight: 500;
+}
+.nav__contents a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.nav__contents{
+    margin-left: -80px;  
+}
+.nav__button button{
+    padding: 6px 30px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #3D5CB8;
+    color: #FFFAFA;
+    cursor: pointer;
+    transition: .5s;
+    
+}
+.nav__button button:hover{
+    background-color: #324d99;
+}
+@media (width < 900px){
+    .nav__contents a{
+        display: none;
+    }
+    .nav__logo{
+        margin-left: 0px;
+    }
+    .navBar{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+/* --------------------------------------NAVBAR_END-------------------------------------- */
+
+
+/* --------------------------------------IMG_SECTION__Start-------------------------------------- */
+
+.img__text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 3.5vw;
+    display: flex;
+    justify-content: center;
+}
+.img__section{
+    margin-top: 80px;
+}
+.main__img{
+    display: flex;
+    justify-content: center;   
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    
+}
+@media (width < 900px){
+    .img__text {
+        font-size: 8vw;
+    }
+    .main__img{
+        width: 100vw;
+       
+    }
+}
+
+/* --------------------------------------IMG_SECTION_End-------------------------------------- */
+/* --------------------------------------CARD_CLASS Start-------------------------------------- */
+.card__class{
+    height: 620px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 0px 25vw 0 25vw;
+    border-radius: 30px;
+}
+.class__buttons button{
+    padding: 15px 35px ;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;  
+    background-color: #F1F5F9;
+    border: none;
+    color: #64748B;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+.class__buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+
+.fa-location-dot, .fa-user, .fa-calendar{
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: #F1F5F9;
+    padding: 10px 15px;
+
+}
+.input{
+    padding: 10px 20px 10px 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom:  .5px solid;
+    position: absolute;
+}
+.input:focus{
+    border: none;
+}
+.input::placeholder{
+    font-size: 17px;
+    color: rgb(75, 75, 75);
+    font-weight: 600;
+}
+.detail{
+    display: flex;
+    gap: 10px;
+}
+.class__content{
+    position: relative;
+    top: 38px;
+    left: 5px;
+    color: #797a7a;
+}
+.class__details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.search__icon{
+    background-color: #3857ac;
+    font-size: 20px;
+    padding: 12px 15px;
+    border-radius: 50%;
+    
+    color: #F1F5F9;
+    cursor: pointer;
+}
+@media (width < 900px){
+    .card__class{
+        margin:0px;
+        height: fit-content;
+    }
+    .class__details{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+    }
+    .class__buttons{
+        justify-content: start;
+    }
+    .class__buttons button{
+        width: 100vw;
+    }
+}
+
+/* --------------------------------------CARD_CLASS End-------------------------------------- */
+/* --------------------------------------TRAVEL_SUPPORT_START-------------------------------------- */
+.travel__headings{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.travel__p1{
+    letter-spacing: 4px;
+    font-family: 'Poppins', sans-serif;  
+    font-size:  16px ;
+    font-weight: 600;
+    line-height: normal;
+}
+.travel__p2{
+    line-height: 64px;
+    font-size: 3.5vw;
+    font-weight: 600;
+}
+.travel__p3{
+    font-size: 16px;
+    font-weight: 400;
+    color: #64748b;
+    line-height: normal;
+}
+.image_and_content{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px 20px 100px;
+}
+.head{
+    font-size: 19.2px;
+    color: #0f172a;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.sectionHead{
+    font-size: 16px;
+    color: #64748b;
+    line-height: normal;
+    text-align: justify;
+}
+.number{
+    text-decoration: none;
+    color: white;
+    background-color: #324d99;
+    padding: 7px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+}
+@media (width < 900px){
+    .img2{
+        display: none;
+    }
+    .image_and_content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .travel__p2, .travel_p3{
+        font-size:6vw;
+       
+    }
+    .travel__headings{
+        margin: 0px 0px;
+    }
+}
+/* --------------------------------------TRAVEL_SUPPORT_END-------------------------------------- */
+/* --------------------------------------CARDS_START-------------------------------------- */
+.cards__section{
+    background-color: #F1F5F9;
+    height: fit-content;
+}
+.para__section{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 125px;
+}
+.cards_para1{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    color: #0f172a;
+}
+.view__btn{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color:  #0f172a;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: .2px solid rgb(90, 89, 89);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card{
+    height: 60vh;
+    width: 23vw;
+    background-color: white;
+    border-radius: 80px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    flex-wrap: wrap;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+@media (width < 1100px){
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .card{
+        width: 35vw;
+        height: fit-content;
+    }
+    
+}
+@media (width < 900px){
+    .card{
+        width: 40vw;
+        height: fit-content;
+    }
+    .view__btn{
+        display: none;
+    }
+    .cards_para1{
+        font-size: 5vw;
+        display: flex;
+        justify-content: start;
+    }
+}
+@media (width < 900px){
+    .card{
+        width: 80vw;
+        height: fit-content;
+    }
+    .cards_para1{
+        font-size: 5vw;
+    }
+    .para__section{
+        justify-content: start;
+        margin: 0px 10px;
+    }
+}
+@media (width < 400px){
+    .card{
+        width: 98vw;
+        height: fit-content;
+    }
+    .cards_para1{
+        font-size: 10vw;
+    }
+}
+
+.card__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.card__details{
+    margin: 10px 30px;
+    line-height: 40px;
+}
+.card__head{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 19.2px;
+    color: #0f172a;
+}
+.card__info{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px;
+    color: #64748b;
+}
+/* --------------------------------------CARDS_END-------------------------------------- */
+
+/* --------------------------------------SUBSCRIBE_START-------------------------------------- */
+.subs__para{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: #0f172a;
+    line-height: 48px;
+}
+.subscribe{
+    background-color: #F1F5F9;
+    height: 360px;
+}
+.subs__input{
+    border: none;
+    padding: 18px 180px 18px 20px;
+}
+.subs__input::placeholder{
+    font-size: 16px;
+}
+.subs__input:placeholder-shown{
+    border: 1px solid grey;
+    border-radius: 30px;
+    content:normal;
+}
+.subsribe_btn{
+    cursor: pointer;
+}
+.subs__button{
+    margin:0 400px ;
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+    align-items: center;
+    
+}
+.subsribe_btn{
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: #3D5CB8;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+@media (width < 700px){
+    .subs__para, .subs__button{
+        justify-content: start;
+    }
+    .subs__button{
+        margin: 0px;
+    }
+}
+@media (width < 520px){
+    .subs__button{
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+    }
+    .subscribe{
+        height: fit-content;
+    }
+}
+/* --------------------------------------SUBSCRIBE_END-------------------------------------- */
+/* --------------------------------------FOOTER_START-------------------------------------- */
+.footer{
+    background-color: #3D5CB8;
+    height: fit-content;
+    color: #FFFFFF;
+    
+}
+.footer__container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.foot__head{
+    font-size: 24px;
+    font-weight: 500;
+}
+.p1, .p2{
+    font-size: 16px;
+}
+ul{
+    list-style: none;
+    line-height: 38px;
+    margin-top: 10px;
+}
+/* --------------------------------------FOOTER_END-------------------------------------- */
+
+
+
+
+
+
+
+
+
